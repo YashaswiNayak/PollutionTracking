@@ -1,25 +1,103 @@
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
     android:orientation="vertical"
-    android:background="@drawable/background_contact"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="@drawable/background_contact">
 
     <TextView
+        android:id="@+id/contactInfoTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Contact Us"
+        android:text="Contact Information"
         android:textSize="24sp"
-        android:textColor="@color/colorPrimaryDark"
-        android:padding="8dp" />
+        android:textStyle="bold"
+        android:paddingBottom="8dp"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="This is the Contact Us section. Add contact information here."
-        android:textSize="16sp"
-        android:textColor="#666666"
-        android:padding="8dp" />
+        android:text="Email: support@hci_project.com"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone: +1 (555) 123-4567"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address: 123 HCI Project Lane, Suite 100, Cityville, State, 12345"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Business Hours: Monday to Friday: 9:00 AM - 5:00 PM, Saturday: 10:00 AM - 3:00 PM, Sunday: Closed"
+        android:paddingBottom="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Follow Us"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:paddingBottom="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Facebook: facebook.com/hci_project"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Twitter: twitter.com/hci_project"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Instagram: instagram.com/hci_project"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LinkedIn: linkedin.com/company/hci_project"
+        android:paddingBottom="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="We value your feedback!"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:paddingBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/nameInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"/>
+
+    <EditText
+        android:id="@+id/emailInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"/>
+
+    <EditText
+        android:id="@+id/messageInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Message"
+        android:inputType="textMultiLine"
+        android:minLines="4"
+        android:maxLines="6"/>
+
+    <Button
+        android:id="@+id/sendFeedbackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Feedback"
+        android:layout_gravity="center"/>
+
 </LinearLayout>

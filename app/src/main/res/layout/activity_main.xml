@@ -13,8 +13,8 @@
         android:layout_height="wrap_content"
         app:tabMode="fixed"
         app:tabGravity="fill"
-        app:tabTextColor="@android:color/white"
-        app:tabSelectedTextColor="@android:color/white"
+        app:tabTextColor="@android:color/black"
+        app:tabSelectedTextColor="@android:color/black"
         app:backgroundTint="@color/colorPrimary"/>
 
     <!-- ViewPager2 to swipe between fragments -->

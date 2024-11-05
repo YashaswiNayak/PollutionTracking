@@ -26,4 +26,10 @@
         android:inputType="numberDecimal"
         android:background="@drawable/edittext_background"
         android:padding="12dp" />
+
+    <CheckBox
+        android:id="@+id/favoriteCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save as Favorite" />
 </LinearLayout>

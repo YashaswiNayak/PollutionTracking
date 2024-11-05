@@ -11,22 +11,62 @@
     <Spinner
         android:id="@+id/citySpinner"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:layout_marginBottom="24dp"
         android:padding="12dp"
+        android:textAlignment="center"
         android:background="@drawable/spinner_background" />
 
-    <!-- Button to fetch pollution data -->
-    <Button
-        android:id="@+id/fetchDataButton"
+    <!-- Button layout for Fetch, Refresh, and Clear buttons -->
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Fetch Pollution Data"
-        android:textColor="#FFFFFF"
-        android:backgroundTint="@color/colorAccent"
-        android:elevation="4dp"
-        android:padding="12dp"
+        android:orientation="horizontal"
+        android:gravity="center"
         android:layout_marginTop="24dp"
-        android:layout_marginBottom="8dp"
-        android:layout_gravity="center" />
+        android:layout_marginBottom="8dp">
+
+        <!-- Fetch Button -->
+        <Button
+            android:id="@+id/fetchDataButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fetch"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="@color/colorAccent"
+            android:elevation="4dp"
+            android:padding="12dp"
+            android:layout_marginEnd="8dp" />
+
+        <!-- Refresh Button -->
+        <Button
+            android:id="@+id/refreshButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Refresh"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="@color/colorAccent"
+            android:elevation="4dp"
+            android:padding="12dp"
+            android:layout_marginEnd="8dp" />
+
+        <!-- Clear Button -->
+        <Button
+            android:id="@+id/clearButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="@color/colorAccent"
+            android:elevation="4dp"
+            android:padding="12dp" />
+    </LinearLayout>
+
+    <!-- RecyclerView to display pollutants -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/pollutionRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical" />
 </LinearLayout>
