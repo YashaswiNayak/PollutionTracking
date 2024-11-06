@@ -1,0 +1,182 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/background_about">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About Air Pollutants"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:paddingBottom="16dp"
+            android:textColor="@android:color/black" />
+
+        <!-- PM2.5 Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. PM2.5"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingTop="8dp"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description: PM2.5 refers to fine particulate matter that is less than 2.5 micrometers in diameter."
+            android:paddingBottom="4dp"
+            android:textColor="@android:color/darker_gray"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Health Effects: PM2.5 can penetrate deep into the lungs and enter the bloodstream, causing respiratory and cardiovascular issues."
+            android:paddingBottom="4dp"
+            android:textColor="@android:color/darker_gray"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sources: Common sources include vehicle emissions, industrial discharges, and burning of fossil fuels."
+            android:paddingBottom="16dp"
+            android:textColor="@android:color/darker_gray"/>
+
+        <!-- PM10 Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. PM10"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingTop="8dp"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description: PM10 refers to particulate matter with a diameter of 10 micrometers or less."
+            android:paddingBottom="4dp"
+            android:textColor="@android:color/darker_gray"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Health Effects: PM10 can cause respiratory problems and exacerbate asthma."
+            android:paddingBottom="4dp"
+            android:textColor="@android:color/darker_gray"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sources: Sources include dust from roads, construction sites, and burning of biomass."
+            android:paddingBottom="16dp"
+            android:textColor="@android:color/darker_gray"/>
+
+        <!-- NO2 Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3. NO2 (Nitrogen Dioxide)"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingTop="8dp"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description: NO2 is a reddish-brown gas with a characteristic sharp, biting odor."
+            android:paddingBottom="4dp"
+            android:textColor="@android:color/darker_gray"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Health Effects: Exposure to NO2 can lead to respiratory problems and decreased lung function."
+            android:paddingBottom="4dp"
+            android:textColor="@android:color/darker_gray"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sources: Major sources include vehicle emissions, power plants, and industrial processes."
+            android:paddingBottom="16dp"
+            android:textColor="@android:color/darker_gray"/>
+
+        <!-- O3 Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4. O3 (Ozone)"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingTop="8dp"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description: Ozone is a gas composed of three oxygen atoms, occurring both at ground level and in the upper atmosphere."
+            android:paddingBottom="4dp"
+            android:textColor="@android:color/darker_gray"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Health Effects: Ground-level ozone can cause respiratory issues, throat irritation, and worsen asthma."
+            android:paddingBottom="4dp"
+            android:textColor="@android:color/darker_gray"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sources: Sources include industrial emissions and vehicular exhaust, particularly in the presence of sunlight."
+            android:paddingBottom="16dp"
+            android:textColor="@android:color/darker_gray"/>
+
+        <!-- CO Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5. CO (Carbon Monoxide)"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingTop="8dp"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description: CO is a colorless, odorless gas produced by the incomplete combustion of carbon-containing fuels."
+            android:paddingBottom="4dp"
+            android:textColor="@android:color/darker_gray"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Health Effects: High levels of CO can cause harmful health effects by reducing the amount of oxygen that can be transported in the bloodstream."
+            android:paddingBottom="4dp"
+            android:textColor="@android:color/darker_gray"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sources: Common sources include motor vehicle exhaust, industrial processes, and residential heating."
+            android:paddingBottom="16dp"
+            android:textColor="@android:color/darker_gray"/>
+
+
+    </LinearLayout>
+
+</ScrollView>
