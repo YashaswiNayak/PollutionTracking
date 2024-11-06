@@ -41,6 +41,7 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         val citySpinner: Spinner = view.findViewById(R.id.citySpinner)
         val fetchDataButton: Button = view.findViewById(R.id.fetchDataButton)
         val clearButton: Button = view.findViewById(R.id.clearButton)
+        val refreshButton: Button = view.findViewById(R.id.refreshButton)
         pollutionRecyclerView = view.findViewById(R.id.pollutionRecyclerView)
         view?.findViewById<TextView>(R.id.cityHeading)?.text = "NOTE: Select Others from spinner to enter manual Coordinates\nData fetched will be shown here"
 
@@ -68,7 +69,22 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
                 showCoordinateInputDialog()
             }
         }
+        refreshButton.setOnClickListener{
+            val selectedCity = citySpinner.selectedItem.toString()
+            if (selectedCity == "--Select City/Others--") {
+                Toast.makeText(requireContext(), "Please select a city or enter coordinates", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
 
+            if (cityCoordinates.containsKey(selectedCity)) {
+
+                val (latitude, longitude) = cityCoordinates[selectedCity]!!
+                fetchAirQualityData(latitude, longitude, selectedCity)
+            } else if (selectedCity == "Others") {
+
+                showCoordinateInputDialog()
+            }
+        }
         clearButton.setOnClickListener {
             citySpinner.setSelection(0)
             clearPollutionData()
