@@ -2,14 +2,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
-    android:background="@drawable/background_about">
-
+    android:background="@android:color/white"> <!-- Set to white explicitly -->
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="16dp">
+        android:padding="16dp"
+        android:background="@android:color/white"> <!-- Set to white explicitly -->
 
         <!-- Title -->
         <TextView
@@ -175,7 +175,6 @@
             android:text="Sources: Common sources include motor vehicle exhaust, industrial processes, and residential heating."
             android:paddingBottom="16dp"
             android:textColor="@android:color/darker_gray"/>
-
 
     </LinearLayout>
 
