@@ -1,5 +1,6 @@
 package com.example.hci_project
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.Menu
@@ -29,7 +30,8 @@ class MainActivity : AppCompatActivity() {
         // Link the TabLayout with the ViewPager
         TabLayoutMediator(tabLayout, viewPager) { tab, position ->
             // Inflate the custom tab layout
-            val customTabView = LayoutInflater.from(tabLayout.context).inflate(R.layout.custom_tab, null)
+            val customTabView =
+                LayoutInflater.from(tabLayout.context).inflate(R.layout.custom_tab, null)
             val tabTitle = customTabView.findViewById<TextView>(R.id.tabTitle)
 
             // Set the text based on the position
@@ -43,25 +45,33 @@ class MainActivity : AppCompatActivity() {
             tab.customView = customTabView
         }.attach()
     }
+
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.menu_main, menu)
         return true
     }
+
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
             R.id.action_tips -> {
-                // Handle settings action
+                // Navigate to TipsActivity
+                val intent = Intent(this, TipsActivity::class.java)
+                startActivity(intent)
                 true
             }
 
             R.id.action_faq -> {
-                // Handle about action
+                // Navigate to FaqActivity
+                val intent = Intent(this, FaqActivity::class.java)
+                startActivity(intent)
                 true
+
+
             }
 
             else -> super.onOptionsItemSelected(item)
         }
+
+
     }
-
-
 }
