@@ -53,25 +53,25 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@android:color/black"
-        android:text="Facebook: facebook.com/hci_project"/>
+        android:text="Facebook: facebook.com/AirAware"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@android:color/black"
-        android:text="Twitter: twitter.com/hci_project"/>
+        android:text="Twitter: twitter.com/AirAware"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@android:color/black"
-        android:text="Instagram: instagram.com/hci_project"/>
+        android:text="Instagram: instagram.com/AirAware"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@android:color/black"
-        android:text="LinkedIn: linkedin.com/company/hci_project"
+        android:text="LinkedIn: linkedin.com/company/AirAware"
         android:paddingBottom="16dp"/>
 
     <TextView
